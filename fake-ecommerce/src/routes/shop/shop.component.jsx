@@ -1,7 +1,7 @@
 import ShoeMenu from "../../components/shoemenu/shoemenu.component"
 import Shoes from '../../shoe_data.json'
 
-const Collections = () => {
+const Shop = () => {
     
 
     return (
@@ -12,4 +12,4 @@ const Collections = () => {
     
     )
 }
-export default Collections
+export default Shop

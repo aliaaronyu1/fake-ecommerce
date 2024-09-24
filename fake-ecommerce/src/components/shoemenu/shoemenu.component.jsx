@@ -1,10 +1,11 @@
 import ShoeItem from "../shoeitem/shoeitem.component";
 
-const ShoeMenu = ({Shoes}) => {
+const ShoeMenu = ({ Shoes }) => {
+
     return (
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-wrap">
             {Shoes.map((shoes) => (
-                <ShoeItem key={shoes.id} shoes={shoes}/>
+                <ShoeItem key={shoes.id} shoes={shoes} />
             ))}
         </div>
     )
