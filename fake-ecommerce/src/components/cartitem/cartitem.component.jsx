@@ -40,6 +40,7 @@ const CartItem = ({ shoes }) => {
                 <img width={250} height={250} src={imageUrl} alt="shoe" />
             </div>
             <div>Quantity: {shoes.quantity}</div>
+            <div>Price: ${shoes.price}</div>
             <button className="btn btn-success" onClick={handleAddQuantity}>Add</button>
             <button className="btn btn-danger" onClick={handleRemoveQuantity}>Delete</button>
         </div>

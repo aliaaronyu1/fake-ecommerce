@@ -10,7 +10,6 @@ export const ShoeProvider = ({ children }) => {
         []
     );
     const value = {shoeProduct, setShoeProduct}
-    console.log(shoeProduct)
 
     return <ShoeContext.Provider value={value}>{children}</ShoeContext.Provider>
 }

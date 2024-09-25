@@ -1,25 +1,45 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ShoeContext } from "../../context/shoeproduct.context";
 import { Link } from "react-router-dom";
 
 const ShoeItem = ({ shoes }) => {
     const { setShoeProduct } = useContext(ShoeContext)
     const { imageUrl, name, price, id } = shoes
+    const [ recentlyAddedShoe, setRecentlyAddedShoe ] = useState(null)
 
     const handleAddCart = () => {
+        let newQuantity = 1
         setShoeProduct((prevShoeData) => {
             const existingShoe = prevShoeData.find((item) => item.id === shoes.id)
 
             if (existingShoe) {
+                newQuantity = existingShoe.quantity + 1
+                setRecentlyAddedShoe({ ...existingShoe, quantity: newQuantity})
                 return prevShoeData.map((item) =>
-                    item.id === shoes.id ? { ...item, quantity: item.quantity + 1 } : item
+                    item.id === shoes.id ? { ...item, quantity: newQuantity } : item
                 )
             }
             else {
-                return [...prevShoeData, { ...shoes, quantity: 1 }]
+                setRecentlyAddedShoe({ ...shoes, quantity: newQuantity})
+                return [...prevShoeData, { ...shoes, quantity: newQuantity }]
             }
         })
+
+
     }
+    useEffect(() => {
+        if (recentlyAddedShoe) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: "add_to_cart",
+                product_id: recentlyAddedShoe.id,
+                product_name: recentlyAddedShoe.name,
+                price: recentlyAddedShoe.price,
+                quantity: recentlyAddedShoe.quantity
+            });
+        }
+    }, [recentlyAddedShoe])
+
     return (
         <div className="mx-5 my-4">
             <Link to={`shoes/${id}`}>
