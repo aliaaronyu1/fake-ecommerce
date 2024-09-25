@@ -2,16 +2,37 @@
     {
         "id": "1",
         "name": "Nike Men Dunk Low",
+        "price": "100",
+        "description": "The Nike Dunk Low blends classic style with modern comfort, making it the perfect go-to sneaker for everyday wear. Originally designed for the basketball court, the Dunk Low has become an iconic streetwear staple. Its low-profile design offers a sleek and versatile look, while the durable leather upper provides a premium feel. With its padded collar and cushioned midsole, you'll enjoy all-day comfort, whether you're hitting the streets or just kicking back. Available in a variety of bold colorways, this sneaker is perfect for any casual outfit.",
         "imageUrl": "https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/NIKE+DUNK+LOW+RETRO.png"
+        
     },
     {
         "id": "2",
         "name": "Addidas Runfalcon 3.0 Men's",
+        "price": "150",
+        "description": "This classic low-top sneaker combines timeless style with everyday versatility. Designed for comfort and durability, it features a sleek silhouette that pairs easily with any outfit. Whether you're running errands or enjoying a casual day out, this shoe is built to provide all-day support. Its lightweight construction and cushioned sole offer a comfortable fit, while the durable outer material ensures long-lasting wear. Available in a variety of neutral and vibrant colors, this sneaker is perfect for any occasion.",
         "imageUrl": "https://images.dsw.com/is/image/DSWShoes/539600_001_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=1"
     },
     {
         "id": "3",
         "name": "NMD Adidas",
+        "price": "175",
+        "description": "This classic low-top sneaker combines timeless style with everyday versatility. Designed for comfort and durability, it features a sleek silhouette that pairs easily with any outfit. Whether you're running errands or enjoying a casual day out, this shoe is built to provide all-day support. Its lightweight construction and cushioned sole offer a comfortable fit, while the durable outer material ensures long-lasting wear. Available in a variety of neutral and vibrant colors, this sneaker is perfect for any occasion.",
         "imageUrl": "https://dks.scene7.com/is/image/dkscdn/18ADIMNMDR1BLKGRYMNS_Black_White_Grey_is/?wid=252&hei=252&qlt=85,0&fmt=jpg&op_sharpen=1"
+    },
+    {
+        "id": "4",
+        "name": "Converse Chuck Taylor All Star",
+        "price": "125",
+        "description": "This classic low-top sneaker combines timeless style with everyday versatility. Designed for comfort and durability, it features a sleek silhouette that pairs easily with any outfit. Whether you're running errands or enjoying a casual day out, this shoe is built to provide all-day support. Its lightweight construction and cushioned sole offer a comfortable fit, while the durable outer material ensures long-lasting wear. Available in a variety of neutral and vibrant colors, this sneaker is perfect for any occasion.",
+        "imageUrl": "https://i5.walmartimages.com/seo/Converse-All-Star-Hi-Red-Ankle-High-Fashion-Sneaker-10-5M-8-5M_f2666128-48ba-4e87-8521-aa3e131e6e08.97deabcd8503edde43906cf34b68d725.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+        "id": "5",
+        "name": "New Balance 480 Athletic Shoes",
+        "price": "123",
+        "description": "This classic low-top sneaker combines timeless style with everyday versatility. Designed for comfort and durability, it features a sleek silhouette that pairs easily with any outfit. Whether you're running errands or enjoying a casual day out, this shoe is built to provide all-day support. Its lightweight construction and cushioned sole offer a comfortable fit, while the durable outer material ensures long-lasting wear. Available in a variety of neutral and vibrant colors, this sneaker is perfect for any occasion.",
+        "imageUrl": "https://images.journeys.com/images/products/1_810702_FS.JPG"
     }
-   ]
+]
