@@ -10,10 +10,9 @@ const Checkout = () => {
         if (!hasPushedPageView.current) {
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
-                event: "page_view",
-                page_title: "checkout",
-                page_location: window.location.href,
-                page_path: window.location.pathname
+                event: "begin_checkout",
+                value: totalPrice,
+                items: shoeProduct
             });
         }
         hasPushedPageView.current = true;

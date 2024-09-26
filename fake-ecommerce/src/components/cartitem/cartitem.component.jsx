@@ -17,6 +17,7 @@ const CartItem = ({ shoes }) => {
                 price: recentlyAddedShoe.price,
                 quantity: recentlyAddedShoe.quantity
             });
+            
         }
     }, [recentlyAddedShoe])
 

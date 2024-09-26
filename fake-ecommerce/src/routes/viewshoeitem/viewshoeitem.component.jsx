@@ -30,9 +30,10 @@ const ViewShoeItem = () => {
                 event: "view_item",
                 product_id: listShoes.id,
                 product_name: listShoes.name,
-                price: listShoes.price,
+                price: listShoes.price
             });
         }
+        
         hasPushedPageView.current = true
     }, [])
 

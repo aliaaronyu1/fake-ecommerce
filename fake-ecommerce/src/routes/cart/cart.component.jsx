@@ -17,7 +17,7 @@ const Cart = () => {
             });
         }
         hasPushedPageView.current = true;
-    }, [])
+    }, [shoeProduct])
 
     return (
         <div>
