@@ -1,16 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { ShoeContext } from "../../context/shoeproduct.context";
 import { useNavigate } from "react-router-dom";
 const Checkout = () => {
     const { shoeProduct } = useContext(ShoeContext);
     const navigate = useNavigate()
+    const hasPushedPageView = useRef(false);
+    
+    useEffect(() => {
+        if (!hasPushedPageView.current) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: "page_view",
+                page_title: "checkout",
+                page_location: window.location.href,
+                page_path: window.location.pathname
+            });
+        }
+        hasPushedPageView.current = true;
+    }, [])
 
     const totalPrice = shoeProduct.reduce((total, shoe) => {
         return total + Number(shoe.price) * Number(shoe.quantity)
     }, 0);
 
     const handlePlaceOrder = () => {
-        navigate('/purchase-success')     
+        navigate('/purchase-success')
     }
 
     return (
@@ -42,9 +56,9 @@ const Checkout = () => {
                 </form>
                 <form className="d-flex flex-wrap">
                     <label>Credit Card Holder Name</label>
-                    <input type="text"/>
+                    <input type="text" />
                     <label>Credit Card #</label>
-                    <input type="text"/>
+                    <input type="text" />
                 </form>
 
                 <button className="btn btn-primary" onClick={handlePlaceOrder}>Place Order</button>
